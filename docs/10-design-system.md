@@ -130,13 +130,13 @@ Espaçamentos em múltiplos de 8 px; raios de 6, 12 e 16 px e pílula.
 
 ## Estilos de animação
 
-O professor exige estilos de animação, além dos de cor, texto, efeito e grade (22/10/2026). Os estilos abaixo padronizam as transições usadas nas 2.832 interações do protótipo: todas as transições do arquivo usam exatamente uma destas combinações. A API usada para montar o arquivo não cria estilos de animação, então eles são criados direto no Figma pela equipe.
+O professor exige estilos de animação, além dos de cor, texto, efeito e grade (22/10/2026). Os estilos abaixo padronizam as transições usadas nas 2.832 interações do protótipo: todas as transições do arquivo usam exatamente uma destas combinações. Os estilos ficam em **Assets › Estilos de animação** (Figma Motion). Esse recurso anima camadas, e não as transições do protótipo; por isso, cada estilo representa a sua transição com o efeito mais próximo (Opacidade para Dissolver e Smart animate, Posição para Rolagem animada), e a descrição de cada estilo diz qual transição ele padroniza.
 
-| Estilo | Animação | Curva | Duração | Onde é usado |
-|---|---|---|---|---|
-| Animação/Navegação | Dissolver | Ease out | 200 ms | Troca de tela pelo menu, botões e links |
-| Animação/Navegação longa | Dissolver | Ease out | 250 ms | Telas longas, como as etapas da nova portaria |
-| Animação/Sobreposição | Dissolver | Ease out | 200 ms | Modais, menus, listas de seleção e avisos |
-| Animação/Microinteração | Smart animate | Ease out | 150 ms | Hover em botões e cards; segmentos e abas |
-| Animação/Rolagem | Rolagem animada | Ease out | 400 ms | Links que rolam até uma seção da landing |
+| Estilo | Transição no protótipo | Efeito no estilo | Curva | Duração | Onde é usado |
+|---|---|---|---|---|---|
+| Animação/Navegação | Dissolver | Opacidade (0 → 100%) | Ease out | 200 ms | Troca de tela pelo menu, botões e links |
+| Animação/Navegação longa | Dissolver | Opacidade (0 → 100%) | Ease out | 250 ms | Telas longas, como as etapas da nova portaria e o carrossel da landing |
+| Animação/Sobreposição | Dissolver | Opacidade (0 → 100%) | Ease out | 200 ms | Modais, menus, listas de seleção e avisos |
+| Animação/Microinteração | Smart animate | Opacidade (0 → 100%) | Ease out | 150 ms | Hover em botões e cards; segmentos e abas |
+| Animação/Rolagem | Rolagem animada | Posição (sobe 40 px) | Ease out | 400 ms | Links que rolam até uma seção da landing |
 

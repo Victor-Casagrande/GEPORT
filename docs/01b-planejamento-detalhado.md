@@ -222,7 +222,7 @@ Prioridade pelo método MoSCoW (**M**ust, **S**hould, **C**ould, **W**on't). Est
 | US25 | Como **visitante no celular**, quero consultar portarias numa tela adaptada | RF11 | W | 8 | — | Fase futura |
 | US26 | Como **emissor**, quero pedir exceção quando um docente passaria do limite de horas, para não travar a portaria | RF16, RN04 | M | 3 | 2 | Pronto |
 | US27 | Como **DEP, DAP ou DG**, quero aprovar ou recusar pedidos de exceção no sistema, com registro no histórico | RF16, RN04 | M | 3 | 2 | Pronto |
-| US28 | Como **equipe**, queremos estilos de animação no Figma, exigidos pelo professor | — | M | 2 | 2 | A fazer |
+| US28 | Como **equipe**, queremos estilos de animação no Figma, exigidos pelo professor | — | M | 2 | 4 | Pronto |
 
 ## 8. Riscos
 
