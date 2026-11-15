@@ -215,7 +215,7 @@ Prioridade pelo método MoSCoW (**M**ust, **S**hould, **C**ould, **W**on't). Est
 | US18 | Como **qualquer perfil autorizado**, quero ver o histórico completo de versões da portaria | RF15, RN09 | M | 3 | 1 | Pronto |
 | US19 | Como **equipe**, queremos um design system com paleta, estilos e componentes, para manter a consistência | — | M | 8 | 1 | Pronto |
 | US20 | Como **equipe**, queremos validar o protótipo com o professor e com o Gabinete/CGP | — | S | 3 | 2 | A fazer |
-| US21 | Como **equipe**, queremos testar todos os fluxos do protótipo com alguém que não os desenhou | — | M | 3 | 3–4 | Parcial: simulação automática por IA feita em 15/11/2026 ([08](08-prototipo-navegavel.md#checklist-de-teste-de-navegação-sprint-3)); falta o teste com uma pessoa |
+| US21 | Como **equipe**, queremos testar todos os fluxos do protótipo com alguém que não os desenhou | — | M | 3 | 3–4 | Pronto (Gabriel Reato, 15/11/2026; [checklist do 08](08-prototipo-navegavel.md#checklist-de-teste-de-navegação-sprint-3)) |
 | US22 | *Retirada do backlog* | — | — | — | — | Retirada |
 | US23 | Como **equipe**, queremos campos de seleção (selects) interativos no protótipo | — | S | 3 | 1 | Pronto |
 | US24 | Como **emissor**, quero importar as portarias de 2010 a 2016 | RNF07 | W | 13 | — | Fase futura |
@@ -262,7 +262,7 @@ As dúvidas de regra de negócio e de entrega foram levadas ao professor em **22
 | D7 | Ata de kickoff | **Não será exigida** | Kickoff retirado do escopo |
 | D8 | EAP | **Sem datas**; o quadro do Miro era só exemplo, sem preferência de ferramenta | [02 – EAP](02-eap.md) |
 | D9 | Estilos de animação no Figma | **Exigidos**, além de cor, texto, efeito e grade | [10 – Design system](10-design-system.md#estilos-de-animação) |
-| D10 | Repositório | A orientação era entregar num **repositório público**. A equipe usou o próprio repositório de organização, renomeado para `SGP_Sistema_de_Gestao_de_Portarias` e tornado público para a entrega | README |
+| D10 | Repositório | A orientação era entregar num **repositório público**. A equipe usou o próprio repositório de organização, renomeado para `GEPORT` e tornado público para a entrega | README |
 
 ## 11. Comunicação e ferramentas
 

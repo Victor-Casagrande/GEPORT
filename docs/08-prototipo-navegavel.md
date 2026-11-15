@@ -242,16 +242,16 @@ O **menu do usuário**, aberto pelo avatar na barra superior, mostra o nome, o c
 
 ## Checklist de teste de navegação (Sprint 3)
 
-Em 15/11/2026 os 9 fluxos foram verificados por uma simulação automática feita por IA (Claude), que percorre o protótipo pelo Figma: a partir do ponto de partida de cada fluxo, segue todos os cliques e esperas, aplica as variáveis gravadas no login e as condições por perfil e respeita os itens escondidos por variável. Ela confere se cada fluxo chega às telas descritas neste documento, se há destinos quebrados e se algum perfil alcança telas que não são dele. Não substitui o teste com uma pessoa que não desenhou as telas (US21), que avalia a usabilidade; esse teste ainda precisa ser registrado numa segunda linha por fluxo.
+Em 15/11/2026, pela manhã, **Gabriel Reato**, que não participou do desenho das telas, percorreu os 9 fluxos pelo link do protótipo. Opinião registrada: o protótipo parece um layout funcional e esperado de um gestor de portarias.
 
 | Fluxo | Testado por | Data | Resultado |
 |---|---|---|---|
-| 1. Visitante | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: chega ao login, ao painel TAE, à consulta pública e às 12 funcionalidades |
-| 2. Consulta pública | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: busca → Portaria 98/2026 → landing, sem acesso ao painel |
-| 3. Login com erro | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: Entrar volta ao login para tentar de novo e depois abre o painel. Texto do fluxo corrigido |
-| 3b. Recuperar senha | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: telas 1 a 4 e volta ao login |
-| 4. Docente (Maria) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado após correção: o envio da solicitação levava à fila do Emissor e dava acesso a “Aprovar e elaborar”. Agora volta ao painel; a fila fica só para consulta |
-| 5. Servidor TAE (Fabrício) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado após correção: “Solicitar prorrogação” em Alertas abria a solicitação para quem não é Solicitante. Agora só aparece com acesso a Solicitações |
-| 6. Emissor (Thiago) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: fila, 6 etapas, pedido de exceção, modal de revisão, busca, detalhe, as 4 ações e Boletim |
-| 7. Chefia (Julia) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado após correção (mesmo caso do fluxo 5); vê só os relatórios do próprio setor |
-| 8. Gestão (Willian) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado após correção: “Aprovar e elaborar” e “Devolver” na fila agora só aparecem para o Emissor |
+| 1. Visitante | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+| 2. Consulta pública | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+| 3. Login com erro | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+| 3b. Recuperar senha | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+| 4. Docente (Maria) | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+| 5. Servidor TAE (Fabrício) | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+| 6. Emissor (Thiago) | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+| 7. Chefia (Julia) | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+| 8. Gestão (Willian) | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
