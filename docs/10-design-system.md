@@ -130,7 +130,7 @@ Espaçamentos em múltiplos de 8 px; raios de 6, 12 e 16 px e pílula.
 
 ## Estilos de animação
 
-O professor exige estilos de animação, além dos de cor, texto, efeito e grade (22/10/2026). Os estilos abaixo padronizam as transições usadas nas 2.831 interações do protótipo: todas as transições do arquivo usam exatamente uma destas combinações. A API usada para montar o arquivo não cria estilos de animação, então eles são criados direto no Figma pela equipe.
+O professor exige estilos de animação, além dos de cor, texto, efeito e grade (22/10/2026). Os estilos abaixo padronizam as transições usadas nas 2.832 interações do protótipo: todas as transições do arquivo usam exatamente uma destas combinações. A API usada para montar o arquivo não cria estilos de animação, então eles são criados direto no Figma pela equipe.
 
 | Estilo | Animação | Curva | Duração | Onde é usado |
 |---|---|---|---|---|

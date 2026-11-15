@@ -13,7 +13,7 @@ O protótipo foi construído de forma **evolutiva**: cada versão aproveitou a a
 | **Primeira ideia** | Exploração visual da página de apresentação, com imagem de banco e marca provisória | Figma [“Prototipo”](https://www.figma.com/design/ryGXTREuug87cskuPtcKnq/Prototipo) | ES I |
 | **Baixa fidelidade** | Anotações da entrevista e esboços de estrutura no Miro; wireframe em blocos cinza do painel | [Miro – anotações da entrevista](https://miro.com/app/board/uXjVGpKo8vo=/) · Figma [“LandPage”](https://www.figma.com/design/UeFGW2riPPnzz2iSBpjYOB/LandPage) | ES I |
 | **Média fidelidade** | Landing page, painéis e login com cores do IFC, ainda sem componentes nem conexões completas | Figma [“LandPage”](https://www.figma.com/design/UeFGW2riPPnzz2iSBpjYOB/LandPage) | ES I e início de ES II |
-| **Alta fidelidade** | Design system, 91 telas, 60 sobreposições e 2.831 interações, com menu e dados por perfil; revisado com a gravação da entrevista e com as respostas do professor | Arquivo principal deste projeto | ES II (Sprint 1 em diante) |
+| **Alta fidelidade** | Design system, 91 telas, 60 sobreposições e 2.832 interações, com menu e dados por perfil; revisado com a gravação da entrevista e com as respostas do professor | Arquivo principal deste projeto | ES II (Sprint 1 em diante) |
 
 | Primeira ideia | Baixa fidelidade: wireframe do painel |
 |---|---|
@@ -29,7 +29,7 @@ O protótipo foi construído de forma **evolutiva**: cada versão aproveitou a a
 |---|---|
 | Telas | 91, incluindo o diagrama do ciclo de vida, os logins e painéis de cada perfil e as variações de abas e opções (por exemplo, Gabinete ou CGP e tipo de prazo na nova portaria) |
 | Sobreposições (modais, menus, listas de seleção e avisos) | 60 |
-| Interações configuradas | 2.831 (794 condições por perfil e 4.275 gravações de variável) |
+| Interações configuradas | 2.832 (794 condições por perfil e 4.275 gravações de variável) |
 | Fluxos iniciais (pontos de partida) | 9 |
 | Seções na página | 12 |
 
