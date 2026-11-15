@@ -36,7 +36,7 @@ O usuário é a **matrícula SIAPE** e a senha é a mesma da rede institucional 
 | CA-L1 | Login válido | um servidor com matrícula e senha corretas | clica em **Entrar** | vê a Home do próprio perfil, com nome e cargo na barra superior (o perfil Servidor passa antes pelo estado “Entrando…”) | Login → Login – Carregando → Painel – Início |
 | CA-L2 | Credenciais inválidas | matrícula ou senha incorretas | clica em **Entrar** | vê a mensagem “Matrícula ou senha incorretos. Confira os dados e tente novamente.”, o campo de senha fica em vermelho e há a dica sobre maiúsculas e minúsculas | Login – Erro |
 | CA-L3 | Mostrar senha | a senha digitada | clica no ícone de olho | a senha fica visível | Login – Padrão |
-| CA-L4 | Perfil vem do cadastro | qualquer usuário | abre a tela de login do sistema real | não há escolha de perfil: o perfil vem do cadastro (RN05). No protótipo, as abas da faixa “Ambiente de desenvolvimento” só simulam a pessoa de teste e levam ao painel dela | Login – Seletor de Perfil; Login — Padrão — (perfil) |
+| CA-L4 | Perfil vem do cadastro | qualquer usuário | abre a tela de login do sistema real | não há escolha de perfil: o perfil vem do cadastro (RN05). No protótipo, cada pessoa de teste tem o próprio login, marcado com a faixa “Ambiente de desenvolvimento”, e a seção Trocar perfil do menu do usuário leva ao painel de outra pessoa | Login – Padrão; Login — Padrão — (perfil); Menu do usuário |
 | CA-L5 | Acesso à recuperação | a tela de login | clica em **Esqueci minha senha** | vai para a recuperação de senha | Recuperar senha – 1 |
 | CA-L6 | Ajuda | a tela de login | lê o rodapé do formulário | encontra a orientação “Problemas para entrar? Fale com a DTIC do campus.” | Login – Padrão |
 
@@ -56,7 +56,7 @@ O usuário é a **matrícula SIAPE** e a senha é a mesma da rede institucional 
 | # | Cenário | Dado | Quando | Então | Tela |
 |---|---|---|---|---|---|
 | CA-H1 | Menu lateral | um usuário autenticado | abre qualquer tela interna | vê o menu lateral com o item atual destacado e o botão **Sair** | Painel – Início |
-| CA-H2 | Menu conforme o perfil | um usuário de cada perfil | abre a Home | todos veem Início, Portarias, Carga horária, Alertas e Extrato; **Solicitações** aparece para quem pede (Docente) e para quem analisa (Emissor, Gestão); **Nova portaria** e **Boletim de Serviço** só para o Emissor; **Relatórios** só para Chefia (do setor) e Gestão (RN05) | Painel – Início de cada perfil |
+| CA-H2 | Menu conforme o perfil | um usuário de cada perfil | abre a Home | todos veem Início, Portarias, Carga horária, Alertas e Extrato; **Solicitações** (com Listar solicitações e Nova solicitação) aparece para quem pede (Docente) e para quem analisa (Emissor, Gestão); **Assinaturas** só para a Gestão; **Nova portaria** e **Boletim de Serviço** só para o Emissor; **Relatórios** só para Chefia (do setor) e Gestão (RN05) | Painel – Início de cada perfil |
 | CA-H3 | Resumo pessoal | a servidora Maria Silva, docente | abre a Home | vê portarias vigentes, horas em portarias (8 h de 10 h), alertas e ciências pendentes | Painel – Início |
 | CA-H4 | Pendência acionável | uma ciência pendente | clica em **Dar ciência na Portaria 98/2026** | abre a tela de ciência da portaria | Painel – Início → Ciência |
 | CA-H5 | Barra superior | qualquer tela interna | olha o topo | vê a busca, o sino de notificações com indicador e o menu do usuário com nome e perfil | Painel – Início |

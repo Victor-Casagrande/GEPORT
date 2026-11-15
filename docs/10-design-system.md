@@ -8,13 +8,13 @@ O design system está na página **Design System** do Figma. As telas usam só o
 
 | Recurso | Quantidade | Onde ver no Figma |
 |---|---|---|
-| Variáveis de design (coleção “GEPORT Tokens”) | 28 | Painel **Local variables** |
-| Variáveis de estado do protótipo (coleção “Estado do protótipo”) | 21 | Painel **Local variables**; uso descrito em [08](08-prototipo-navegavel.md#como-o-protótipo-sabe-quem-entrou) |
+| Variáveis de design (coleção “GEPORT Tokens”) | 32 | Painel **Local variables** |
+| Variáveis de estado do protótipo (coleção “Estado do protótipo”) | 25 | Painel **Local variables**; uso descrito em [08](08-prototipo-navegavel.md#como-o-protótipo-sabe-quem-entrou) |
 | Estilos de cor | 16 | **Assets › Estilos de cor**, ligados às variáveis |
 | Estilos de texto | 11 | **Assets › Estilos de texto** |
 | Estilos de efeito (sombras) | 4 | **Assets › Estilos de efeito** |
 | Estilos de grade (guias de layout) | 3 | **Assets › Guias de layout** |
-| Componentes e conjuntos de variantes | 14 + 34 ícones | Página **Design System** |
+| Componentes e conjuntos de variantes | 32 + 34 ícones | Página **Design System** |
 | Sobreposições | 60 (modais, menus, listas de seleção e avisos) | Página **Telas (protótipo)** |
 | Estilos de animação | 5 | **Assets › Estilos de animação** |
 | Variantes interativas | Botão, Card, Segmento, Status | Hover e alternância ao clicar |
@@ -103,14 +103,21 @@ Espaçamentos em múltiplos de 8 px; raios de 6, 12 e 16 px e pílula.
 | **Campo de texto** | 4 variantes (Padrão, Foco, Erro, Desabilitado); propriedades Rótulo, Valor, Ajuda, Mostrar ajuda, Mostrar ícone, Ícone | Formulários |
 | **Segmento** | 2 variantes (Padrão, Selecionado); propriedade Texto; alterna ao clicar | Abas e escolhas exclusivas (prazo, DOU, setor) |
 | **Seletor de perfil** | — | Troca de perfil no menu do usuário |
+| **Opção de perfil** | — | Cada uma das cinco pessoas de teste na seção Trocar perfil do menu do usuário (só no protótipo) |
+| **Link de texto** | 4 variantes (Estado: Padrão, Hover × Peso: Medium, Regular) | Atalhos como Ver todos, Ver detalhes e Saiba mais |
 | **Card de funcionalidade** | 2 variantes (Padrão, Hover); propriedades Título, Descrição, Ícone, Mostrar link | Landing |
+| **Card de benefício** (4) | 2 variantes cada (Padrão, Hover): conta institucional, nada fica pela metade, histórico que não se perde, busca imediata | Seção “Por que confiar” da landing |
+| **Prévia do painel — carrossel** | 4 variantes (Slide 1 a 4) | Prévia do painel no hero da landing |
 | **Item de menu** | 2 variantes (Padrão, Ativo); propriedades Texto, Ícone | Menu lateral |
-| **Subitem de menu** | 2 variantes (Padrão, Ativo); propriedade Texto | Listar portarias e Nova portaria, dentro de Portarias |
+| **Subitem de menu** | 2 variantes (Padrão, Ativo); propriedade Texto | Itens dos submenus de Portarias e Solicitações |
 | **Grupo de navegação — Portarias** | 4 variantes (Estado: Padrão, Ativo × Expandido: Sim, Não) | Abre e fecha o submenu de Portarias |
 | **Menu lateral** | Itens de menu + Sair; itens de acesso restrito ligados às variáveis `RBAC/Acesso …` | Telas internas compartilhadas |
 | **Menu lateral RBAC** | 5 variantes (Perfil: Gestão, Emissor, Chefia, Docente, TAE) | Painel inicial de cada perfil |
 | **Barra superior** | Propriedades Nome, Perfil, Iniciais | Todas as telas internas |
 | **Cabeçalho da landing** | — | Landing e consulta pública |
+| **Documento oficial** | Montado com `Documento/Brasão`, `Documento/Parágrafo`, `Documento/Parágrafo forte`, `Documento/Assinatura`, `Documento/Rodapé` e `Documento/Lacuna`; as lacunas somem conforme as etapas são concluídas | Prévia da portaria nas etapas da nova portaria |
+| **Prévia lateral do documento** e **Modal/Revisão do documento** | — | Etapa 6 da nova portaria: prévia ao lado e modal com a portaria completa antes do envio ao SIPAC |
+| **Resumo da fila** e **Portaria na fila de assinatura** | — | Fila de assinaturas do Diretor-Geral |
 | **Logo GEPORT** | 4 variantes (Versão: Horizontal, Símbolo, Ícone, Monocromática), montadas sobre o componente `_Logo GEPORT / Símbolo base` | Menu lateral, cabeçalho da landing e materiais do projeto |
 | **Ícones** | 34 componentes `Icon/…` (documento, pessoas, sincronizar, busca, sino, alerta, check, cadeado, escudo, e-mail…) | Usados por instância e trocados pela propriedade Ícone |
 
@@ -123,7 +130,7 @@ Espaçamentos em múltiplos de 8 px; raios de 6, 12 e 16 px e pílula.
 
 ## Estilos de animação
 
-O professor exige estilos de animação, além dos de cor, texto, efeito e grade (22/10/2026). Os estilos abaixo padronizam as transições usadas nas 2.648 interações do protótipo: todas as transições do arquivo usam exatamente uma destas combinações. A API usada para montar o arquivo não cria estilos de animação, então eles são criados direto no Figma pela equipe.
+O professor exige estilos de animação, além dos de cor, texto, efeito e grade (22/10/2026). Os estilos abaixo padronizam as transições usadas nas 2.831 interações do protótipo: todas as transições do arquivo usam exatamente uma destas combinações. A API usada para montar o arquivo não cria estilos de animação, então eles são criados direto no Figma pela equipe.
 
 | Estilo | Animação | Curva | Duração | Onde é usado |
 |---|---|---|---|---|

@@ -47,8 +47,8 @@ Este repositório reúne a documentação de projeto. O sistema não é codifica
 | Design personalizado, em consonância com o ambiente do IFC | Verde institucional, logotipo oficial do IFC, logo própria do GEPORT (porta aberta com o G em forma de relógio), termos do serviço público (SIPAC, DOU, Boletim de Serviço, SIAPE) · [10 – Design system](docs/10-design-system.md) |
 | Requisitos levantados em Engenharia de Software I | [05 – Requisitos](docs/05-requisitos.md), com o horário de cada trecho da entrevista |
 | Imagens, fontes, ícones e ilustrações | Logotipo do IFC, fonte Inter com 11 estilos de texto, 34 ícones em componentes, ilustrações na landing |
-| Componentes, sobreposições, paleta de cores e estilos no Figma | 14 componentes com variantes e propriedades (mais 34 ícones), 60 sobreposições (modais, menus, listas de seleção e avisos), 16 estilos de cor ligados a variáveis, 11 de texto, 4 de efeito, 3 de grade e 5 de animação; 49 variáveis (28 de design e 21 de estado do protótipo) |
-| Protótipo navegável em botões, menus e sobreposições | 2.648 interações em 89 telas e 60 sobreposições, com 9 fluxos (5 de perfil e 4 públicos); menu, barra superior e atalhos mudam conforme o perfil que entrou, por meio de variáveis e condições; todos os campos de seleção abrem lista de opções · [08 – Protótipo](docs/08-prototipo-navegavel.md) |
+| Componentes, sobreposições, paleta de cores e estilos no Figma | 32 componentes com variantes e propriedades (mais 34 ícones), 60 sobreposições (modais, menus, listas de seleção e avisos), 16 estilos de cor ligados a variáveis, 11 de texto, 4 de efeito, 3 de grade e 5 de animação; 57 variáveis (32 de design e 25 de estado do protótipo) |
+| Protótipo navegável em botões, menus e sobreposições | 2.831 interações em 91 telas e 60 sobreposições, com 9 fluxos (5 de perfil e 4 públicos); menu, barra superior e atalhos mudam conforme o perfil que entrou, por meio de variáveis e condições; todos os campos de seleção abrem lista de opções · [08 – Protótipo](docs/08-prototipo-navegavel.md) |
 | Plano de Projeto, EAP, talentos, critérios de aceitação | [01](docs/01-plano-de-projeto.md) e [01b](docs/01b-planejamento-detalhado.md), [02](docs/02-eap.md), [03](docs/03-mapeamento-de-talentos.md), [04](docs/04-criterios-de-aceitacao.md) |
 | Interfaces a) login, b) recuperação de senha, c) Home com menu | [07 – Interfaces](docs/07-interfaces.md) |
 | Landing page | [09 – Landing page](docs/09-landing-page.md) |
@@ -71,7 +71,7 @@ Este repositório reúne a documentação de projeto. O sistema não é codifica
 | 7. Chefia: relatórios do setor | Login — Chefe de Setor | Julia · Chefe de Setor (Ciência da Computação) |
 | 8. Gestão: relatórios, exceções e assinaturas | Login — Diretor-Geral | Willian · Diretor-Geral |
 
-No login, as abas da faixa **“Ambiente de desenvolvimento”** escolhem com qual pessoa de teste entrar. No sistema real o perfil vem do cadastro institucional (RN05); as abas existem só no protótipo.
+Cada fluxo de perfil começa no login daquela pessoa de teste, marcado com a faixa **“Ambiente de desenvolvimento”**. Depois de entrar, a seção **Trocar perfil** do menu do usuário passa para qualquer uma das cinco pessoas. No sistema real o perfil vem do cadastro institucional (RN05); essas duas formas de escolher a pessoa existem só no protótipo.
 
 ## Estrutura do repositório
 

@@ -13,7 +13,7 @@ O protótipo foi construído de forma **evolutiva**: cada versão aproveitou a a
 | **Primeira ideia** | Exploração visual da página de apresentação, com imagem de banco e marca provisória | Figma [“Prototipo”](https://www.figma.com/design/ryGXTREuug87cskuPtcKnq/Prototipo) | ES I |
 | **Baixa fidelidade** | Anotações da entrevista e esboços de estrutura no Miro; wireframe em blocos cinza do painel | [Miro – anotações da entrevista](https://miro.com/app/board/uXjVGpKo8vo=/) · Figma [“LandPage”](https://www.figma.com/design/UeFGW2riPPnzz2iSBpjYOB/LandPage) | ES I |
 | **Média fidelidade** | Landing page, painéis e login com cores do IFC, ainda sem componentes nem conexões completas | Figma [“LandPage”](https://www.figma.com/design/UeFGW2riPPnzz2iSBpjYOB/LandPage) | ES I e início de ES II |
-| **Alta fidelidade** | Design system, 89 telas, 60 sobreposições e 2.648 interações, com menu e dados por perfil; revisado com a gravação da entrevista e com as respostas do professor | Arquivo principal deste projeto | ES II (Sprint 1 em diante) |
+| **Alta fidelidade** | Design system, 91 telas, 60 sobreposições e 2.831 interações, com menu e dados por perfil; revisado com a gravação da entrevista e com as respostas do professor | Arquivo principal deste projeto | ES II (Sprint 1 em diante) |
 
 | Primeira ideia | Baixa fidelidade: wireframe do painel |
 |---|---|
@@ -21,15 +21,15 @@ O protótipo foi construído de forma **evolutiva**: cada versão aproveitou a a
 | **Média fidelidade: primeira landing page** | **Alta fidelidade: landing page atual** |
 | <img src="imagens/08-evolucao-2-landing-v1.png" alt="Landing v1" width="420"> | <img src="imagens/09-landing-page.png" alt="Landing atual" width="420"> |
 
-**O que mudou da média para a alta fidelidade:** os depoimentos com nomes fictícios deram lugar à comparação “Como era × Como fica”; o seletor de perfil do login virou uma simulação marcada como “Ambiente de desenvolvimento” (no sistema real o perfil vem do cadastro); as telas passaram a usar componentes e estilos; e as regras de negócio foram conferidas com a gravação da entrevista.
+**O que mudou da média para a alta fidelidade:** os depoimentos com nomes fictícios deram lugar à comparação “Como era × Como fica”; o seletor de perfil do login virou um login por pessoa de teste, marcado como “Ambiente de desenvolvimento”, mais a seção Trocar perfil do menu do usuário (no sistema real o perfil vem do cadastro); as telas passaram a usar componentes e estilos; e as regras de negócio foram conferidas com a gravação da entrevista.
 
 ## Números
 
 | Item | Quantidade |
 |---|---|
-| Telas | 89, incluindo o diagrama do ciclo de vida, os logins e painéis de cada perfil e as variações de abas e opções (por exemplo, Gabinete ou CGP e tipo de prazo na nova portaria) |
+| Telas | 91, incluindo o diagrama do ciclo de vida, os logins e painéis de cada perfil e as variações de abas e opções (por exemplo, Gabinete ou CGP e tipo de prazo na nova portaria) |
 | Sobreposições (modais, menus, listas de seleção e avisos) | 60 |
-| Interações configuradas | 2.648 (931 condições por perfil e 825 gravações de variável) |
+| Interações configuradas | 2.831 (794 condições por perfil e 4.275 gravações de variável) |
 | Fluxos iniciais (pontos de partida) | 9 |
 | Seções na página | 12 |
 
@@ -56,14 +56,15 @@ O login grava a pessoa de teste em variáveis da coleção **Estado do protótip
 | `RBAC/Acesso Solicitações`, `Nova portaria`, `Relatórios`, `Boletim` | Mostram ou escondem os itens do menu lateral |
 | `RBAC/Limite docente` e `RBAC/Vínculo TAE` | Escolhem a versão docente (limite de 10 h) ou TAE (jornada de 40 h) da tela Carga horária |
 | `RBAC/Menu perfil 1` e `2` (com descrição) e `RBAC/Menu tem perfil 2` | Perfis acumulados no menu do usuário |
-| `Perfil selecionado` | Aba marcada no login |
-| `Sidebar/Portarias expandida` | Abre e fecha o submenu de Portarias |
+| `Perfil selecionado` | Pessoa de teste escolhida no login ou em Trocar perfil |
+| `Sidebar/Portarias expandida` e `recolhida` | Abrem e fecham o submenu de Portarias |
+| `Sidebar/Solicitações expandida`, `recolhida` e `hotspots ativos` | Abrem e fecham o submenu de Solicitações e ligam as áreas clicáveis dele |
 
 ## Fluxos
 
 ### 1. Visitante: landing → login
 
-Landing → **Entrar no GEPORT** → Login (aba Servidor) → **Entrar** → “Entrando…” (avança sozinho em 1,2 s) → Painel do servidor TAE.
+Landing → **Entrar no GEPORT** → Login – Padrão (Fabrício) → **Entrar** → “Entrando…” (avança sozinho em 1,2 s) → Painel do servidor TAE.
 Na landing, os 12 cards de funcionalidade abrem sobreposições navegáveis entre si (anterior, próxima, fechar). Sobre e Funcionalidades rolam a página; Consultar portarias leva à consulta pública.
 
 ### 2. Consulta pública (sem login)
@@ -72,14 +73,14 @@ Consulta pública – busca → linha **98/2026** → Consulta pública – Port
 
 ### 3. Login com erro · 3b. Recuperar senha
 
-- **3:** Login – Erro → abas de perfil (cada uma com a sua versão de erro) → **Entrar** → painel do perfil escolhido.
+- **3:** Login – Erro (há uma versão de erro para cada pessoa de teste) → **Entrar** → painel daquela pessoa.
 - **3b:** Recuperar senha 1 → **Enviar link** → 2 (reenviar mostra o aviso “Link reenviado”) → **Abrir link do e-mail (simulação)** → 3 → **Salvar nova senha** → 4 → **Ir para o login**.
 
 ### 4. Docente (Maria): painel, ciência e solicitação
 
 Login — Docente → **Entrar** → Painel (Docente) → **Dar ciência na Portaria 98/2026** → Ciência → **Estou ciente do teor** → Alertas.
 Pelo menu: Carga horária (8 h de 10 h; exportar gera aviso), Alertas (abas por tipo; Ver portaria, Dar ciência, Solicitar prorrogação), Extrato (abas Todas/Vigentes/Encerradas/Revogadas; Exportar PDF).
-**Solicitações** abre a nova solicitação: tipo de pedido (nova portaria, alteração de membros ou prorrogação), destino (Gabinete ou CGP), tipo de prazo (determinado, data fechada ou indeterminado), membros sugeridos e **Membro externo** (aluno, comunidade ou empresa) → **Enviar solicitação** → o pedido aparece na fila do Emissor.
+**Solicitações › Nova solicitação** abre o formulário: tipo de pedido (nova portaria, alteração de membros ou prorrogação), destino (Gabinete ou CGP), tipo de prazo (determinado, data fechada ou indeterminado), membros sugeridos e **Membro externo** (aluno, comunidade ou empresa) → **Enviar solicitação** → o pedido aparece na fila do Emissor.
 O avatar abre o **menu do usuário**, com a troca entre Servidor e Solicitante, Meu extrato e Sair.
 
 ### 5. Servidor TAE (Fabrício): painel e jornada
@@ -91,7 +92,7 @@ Login – Servidor → **Entrar** → “Entrando…” → Painel (TAE): 8 h de
 1. **Painel (Emissor)** → **Abrir fila de análise** (ou Solicitações no menu) → **Solicitações – fila do Emissor**: abas Em análise, Devolvidas e Aprovadas → **Aprovar e elaborar** (ou Devolver).
 2. **Nova portaria 1 a 4**: na etapa 1, setor emissor (Gabinete ou CGP), tipo de prazo e “Exige publicação no DOU?” mudam a tela; cada etapa tem Continuar e Voltar; o indicador de etapas permite voltar a uma etapa concluída; **Salvar rascunho** mostra o aviso.
 3. **Etapa 5 – Membros**: Diego Alves passaria de 9 h para 11 h; o alerta bloqueia o **Continuar**. O link **Pedir exceção ao DEP, DAP ou DG** abre o modal do pedido (servidor, justificativa e destinatário) → **Enviar pedido** → aviso “Exceção solicitada”. Ou o **X** da linha do Diego leva à versão **ajustada**, com Fábio Nunes no lugar.
-4. **Etapa 6 – Revisão**: cada bloco tem **Editar**; **Enviar para assinatura no SIPAC** volta à lista de portarias.
+4. **Etapa 6 – Revisão**: cada bloco tem **Editar**; **Revisar documento** abre o modal com a portaria no formato oficial (componente `Documento oficial`) → **Enviar para assinatura no SIPAC** volta à lista de portarias.
 5. **Portaria 112/2026 – detalhe** → **Ver ciclo de vida** (diagrama) ou **Ações** (menu sobreposto):
    - **Alterar membros** → Enviar para assinatura → volta ao detalhe;
    - **Retificar** → Enviar para assinatura → volta ao detalhe;
@@ -107,14 +108,14 @@ Login — Chefe de Setor → Painel (Chefia): carga horária por servidor do set
 
 Login — Diretor-Geral → Painel (Gestão):
 - **Analisar exceção** (ou o pedido no card, ou o indicador Exceções pendentes) → pedido de Diego Alves → **Aprovar exceção** ou **Recusar** → aviso com a decisão, registrada no histórico;
-- **Assinaturas** (ou a portaria no card) → Portaria 112/2026 aguardando assinatura → **Assinar via SIPAC** → detalhe da portaria;
+- **Assinaturas** (menu ou botão do cabeçalho) → **Assinaturas – fila do Diretor-Geral**: 4 portarias elaboradas pela CGP e pelo Gabinete, a 109/2026 marcada como urgente → **Ver portaria** ou **Assinar no SIPAC** → Portaria aguardando assinatura → **Assinar via SIPAC** → detalhe da portaria;
 - **Relatórios** (menu, **Ver detalhes** ou o indicador Setores monitorados) → **Relatórios gerenciais**: todos os setores, faixa “1 pedido de exceção aguarda sua aprovação”, abas Carga horária e Histórico por objeto, **Baixar PDF**.
 
 ## Mapa de navegação
 
 ```mermaid
 flowchart LR
-    LAND[Landing] -->|Entrar no GEPORT| LOGIN[Login – abas de perfil]
+    LAND[Landing] -->|Entrar no GEPORT| LOGIN[Login de cada pessoa]
     LAND -->|Consultar portarias| CP[Consulta pública] --> CPD[Consulta – Portaria 98/2026]
     LAND -.->|cards| FUNC[[12 sobreposições de funcionalidade]]
     LOGIN -->|Esqueci minha senha| R1[Recuperar 1] --> R2[Recuperar 2] --> R3[Recuperar 3] --> R4[Recuperar 4] --> LOGIN
@@ -134,7 +135,7 @@ flowchart LR
     HEMI --> FILA[Fila do Emissor] -->|Aprovar e elaborar| N1[Nova portaria 1]
     N1 --> N2[2] --> N3[3] --> N4[4] --> N5[5 Membros – bloqueio]
     N5 -.->|Pedir exceção| EXC[[Modal – pedido de exceção]]
-    N5 -->|remover Diego| N5A[5 ajustado] --> N6[6 Revisão] -->|Enviar ao SIPAC| BUSCA
+    N5 -->|remover Diego| N5A[5 ajustado] --> N6[6 Revisão] -.->|Revisar documento| MODREV[[Modal – revisão do documento]] -->|Enviar ao SIPAC| BUSCA
     HEMI --> BOL[Boletim de Serviço]
     BUSCA[Portarias – busca] --> DET[Portaria 112/2026]
     DET --> CICLO[Ciclo de vida]
@@ -146,7 +147,7 @@ flowchart LR
 
     HCHE --> RELC[Relatórios do meu setor] --> HISC[Histórico por objeto – setor]
     HGES --> APR[Aprovar exceção]
-    HGES --> SIP[Assinatura no SIPAC] --> DET
+    HGES --> FILADG[Fila de assinaturas] --> SIP[Assinatura no SIPAC] --> DET
     HGES --> REL[Relatórios gerenciais] --> HISG[Histórico por objeto]
     REL --> APR
 ```
@@ -210,8 +211,8 @@ O diagrama do ciclo de vida, aberto por **Ver ciclo de vida** no detalhe, está 
 | **Navegar para** (Navigate) | Menu lateral, botões, breadcrumbs, linhas de tabela |
 | **Abrir sobreposição** (Open overlay) | Modais de funcionalidade, menus do usuário, menu de ações, listas de seleção, modal de membro externo, avisos |
 | **Rolar até** (Scroll to) | Links Sobre e Funcionalidades da landing; cabeçalho da consulta pública |
-| **Mudar para** (Change to, variantes interativas) | Hover em botões e cards; segmentos e abas que alternam ao clicar; submenu de Portarias |
-| **Definir variável** (Set variable) | Botões **Entrar** do login gravam a pessoa de teste; o grupo Portarias guarda se o submenu está aberto |
+| **Mudar para** (Change to, variantes interativas) | Hover em botões e cards; segmentos e abas que alternam ao clicar; submenus de Portarias e Solicitações |
+| **Definir variável** (Set variable) | Botões **Entrar** do login e as opções de **Trocar perfil** gravam a pessoa de teste; os grupos Portarias e Solicitações guardam se o submenu está aberto |
 | **Condicional** (If) | Início, Relatórios, Solicitações e logotipo levam cada perfil à sua tela; a troca de perfil no menu do usuário |
 | **Após atraso** (After delay) | “Entrando…” avança para o painel; avisos se fecham sozinhos |
 | **Voltar** (Back) | “← Voltar à portaria” no diagrama do ciclo de vida |
@@ -231,7 +232,7 @@ O **menu do usuário**, aberto pelo avatar na barra superior, mostra o nome, o c
 ## Limitações conhecidas
 
 - **Somente desktop (decisão de escopo):** as telas foram desenhadas para 1440 px, porque o GEPORT é um sistema administrativo usado nos computadores do campus. A versão responsiva (celular e tablet) está no backlog como fase futura (US25), começando pela consulta pública.
-- **Escolha de perfil no login:** existe só no protótipo, para simular cada pessoa de teste (ver [07](07-interfaces.md#a-login-com-usuário-e-senha)).
+- **Login por pessoa de teste e Trocar perfil:** existem só no protótipo, para simular cada pessoa de teste (ver [07](07-interfaces.md#a-login-com-usuário-e-senha)).
 - Escolher outra opção numa lista fecha a sobreposição, mas o valor exibido no campo não muda (o Figma exigiria uma variante de tela para cada combinação). As escolhas mais importantes (tipo de pedido, destino, prazo, DOU, abas) têm variações de tela próprias.
 - Os campos de texto não aceitam digitação; os valores são de exemplo.
 - Nas telas pessoais compartilhadas (Alertas, Extrato, Ciência), a barra superior mostra quem entrou, mas os dados de exemplo são os da docente **Maria**.

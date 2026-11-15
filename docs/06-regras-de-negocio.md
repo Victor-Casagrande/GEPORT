@@ -39,7 +39,7 @@ Cada regra acima reúne regras menores. Para que cada uma possa ser verificada e
 | RN04.2 | o servidor é docente e a soma ultrapassaria 10 h semanais | bloqueia a inclusão com alerta crítico | o Emissor pode pedir exceção (RN04.4) |
 | RN04.3 | a soma atinge 80% ou mais do limite | mostra o status “Perto do limite” | não bloqueia |
 | RN04.4 | há pedido de exceção ao limite docente, com justificativa | o DEP, o DAP ou o DG aprova ou recusa no próprio sistema | só após a aprovação a inclusão é liberada; a decisão fica no histórico |
-| RN05.1 | o usuário acumula perfis | pode trocar de perfil pelo menu do usuário | o perfil vem do cadastro, não é escolhido no login (no protótipo, as abas do login só simulam a pessoa de teste) |
+| RN05.1 | o usuário acumula perfis | pode trocar de perfil pelo menu do usuário | o perfil vem do cadastro, não é escolhido no login (no protótipo, o login de cada pessoa de teste e a seção Trocar perfil só simulam o cadastro) |
 | RN05.2 | o usuário é Chefia de setor | vê relatórios só do próprio setor | — |
 | RN06.1 | a consulta é pública (sem login) | exibe número, objeto, membros, papéis, horas e vigência | CPF e dados sensíveis nunca aparecem |
 | RN06.2 | o relatório compara servidores | exige perfil Gestão ou Chefia | — |
@@ -137,7 +137,7 @@ O Gabinete e a CGP elaboram; quem **assina** é o **Diretor-Geral**, no SIPAC (c
 - Um usuário pode **acumular perfis** (ex.: uma docente que também coordena um curso é Servidora e Solicitante).
 - O perfil vem do cadastro institucional; **não é escolhido na tela de login**.
 
-**No protótipo:** o login grava a pessoa de teste em variáveis do Figma, e o menu lateral, a barra superior e os atalhos mudam conforme o perfil: Nova portaria e Boletim de Serviço só para o Emissor; Relatórios só para Gestão e Chefia (esta vê só o próprio setor); Solicitações para quem pede e para quem analisa. As abas de perfil no login, marcadas como “Ambiente de desenvolvimento”, existem só para a demonstração.
+**No protótipo:** o login grava a pessoa de teste em variáveis do Figma, e o menu lateral, a barra superior e os atalhos mudam conforme o perfil: Nova portaria e Boletim de Serviço só para o Emissor; Relatórios só para Gestão e Chefia (esta vê só o próprio setor); Solicitações para quem pede e para quem analisa; Assinaturas só para a Gestão. O login de cada pessoa de teste, marcado como “Ambiente de desenvolvimento”, e a seção Trocar perfil do menu do usuário existem só para a demonstração.
 
 | Pessoa de teste | Perfis |
 |---|---|

@@ -128,7 +128,7 @@ Siglas: **VC** Victor Casagrande · **LD** Lucas Duarte Lopes · **WT** Willigha
 | 3.2.1 | Paleta de cores e variáveis | Coleção de variáveis e 16 estilos de cor ligados a ela. | LD | 8 h | Estilos de cor visíveis no painel Assets | — |
 | 3.2.2 | Estilos de texto, efeito e grade | 11 estilos de texto, 4 de efeito, 3 de grade e 5 de animação. | LD | 8 h | Telas sem valores soltos de fonte e sombra | 3.2.1 |
 | 3.2.3 | Biblioteca de ícones | 34 ícones em componentes. | WT | 8 h | Ícones usados apenas por instância | — |
-| 3.2.4 | Componentes e variantes | 14 componentes: Botão, Status, Campo de texto, Segmento, Seletor de perfil, Card de funcionalidade, Item de menu, Subitem de menu, Grupo de navegação — Portarias, Menu lateral, Menu lateral RBAC, Barra superior, Cabeçalho da landing e Logo GEPORT, com propriedades e estados interativos. | LD | 24 h | Componentes usados em todas as telas | 3.2.1, 3.2.2, 3.2.3 |
+| 3.2.4 | Componentes e variantes | 32 componentes: de interface (Botão, Status, Campo de texto, Segmento, Link de texto, Seletor e Opção de perfil), de navegação (Item e Subitem de menu, Grupo de navegação — Portarias, Menu lateral, Menu lateral RBAC, Barra superior, Cabeçalho da landing), da landing (Card de funcionalidade, 4 Cards de benefício, Prévia do painel — carrossel), do documento oficial (Documento oficial, Brasão, Parágrafo, Parágrafo forte, Assinatura, Rodapé, Lacuna, Prévia lateral, Modal de revisão), da fila de assinaturas (Resumo da fila, Portaria na fila de assinatura) e a Logo GEPORT, com propriedades e estados interativos. | LD | 24 h | Componentes usados em todas as telas | 3.2.1, 3.2.2, 3.2.3 |
 
 **3.3 INTERFACES**
 

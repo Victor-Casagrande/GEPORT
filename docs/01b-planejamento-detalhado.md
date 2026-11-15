@@ -289,6 +289,6 @@ As dúvidas de regra de negócio e de entrega foram levadas ao professor em **22
 ## 13. Premissas e restrições
 
 - **Premissa:** o acesso ao LDAP/AD da Reitoria e ao SIPAC está garantido. O GEPORT lê de lá nome, nome social, SIAPE, CPF, vínculo e lotação.
-- **Premissa:** um usuário pode acumular perfis; o perfil vem do cadastro e não é escolhido na tela de login. No protótipo, abas marcadas como “Ambiente de desenvolvimento” simulam a pessoa de teste.
+- **Premissa:** um usuário pode acumular perfis; o perfil vem do cadastro e não é escolhido na tela de login. No protótipo, cada pessoa de teste tem o próprio login, marcado como “Ambiente de desenvolvimento”, e o menu do usuário permite trocar de pessoa.
 - **Restrição:** trabalho em grupo de três integrantes, com prazo fixo de 08/11/2026, 23h59.
 - **Restrição:** o protótipo é feito no Figma; não há código executável.

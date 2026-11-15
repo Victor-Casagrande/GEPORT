@@ -4,7 +4,7 @@ As três interfaces exigidas no trabalho estão na página **Telas (protótipo)*
 
 | Interface | Telas no Figma | Fluxo inicial do protótipo |
 |---|---|---|
-| a) Login com usuário e senha | Login – Seletor de Perfil (Servidor) · Login — Padrão — Docente, Emissor, Chefe de Setor e Diretor-Geral · Login – Erro (e uma versão por perfil) · Login – Carregando | 1. Visitante · 3. Login com erro · 4 a 8 (um por perfil) |
+| a) Login com usuário e senha | Login – Padrão (Servidor) · Login — Padrão — Docente, Emissor, Chefe de Setor e Diretor-Geral · Login – Erro (e uma versão por perfil) · Login – Carregando | 1. Visitante · 3. Login com erro · 4 a 8 (um por perfil) |
 | b) Recuperação de senha | Recuperar senha – 1. Pedir link · 2. Link enviado · 3. Nova senha · 4. Senha alterada | 3b. Recuperar senha |
 | c) Home com menu | Painel – Início (Docente) · (TAE) · (Emissor) · (Chefia) · (Gestão) | 4 a 8 |
 
@@ -20,7 +20,7 @@ As três interfaces exigidas no trabalho estão na página **Telas (protótipo)*
 
 | Elemento | Comportamento |
 |---|---|
-| Faixa **Ambiente de desenvolvimento** e abas de perfil | Só no protótipo: escolhe a pessoa de teste (Servidor, Docente, Emissor, Chefe de Setor, Diretor-Geral). A linha “Perfil padrão: …” mostra quem vai entrar |
+| Faixa **Ambiente de desenvolvimento** e linha “Perfil padrão: …” | Só no protótipo: mostra com qual pessoa de teste aquele login entra. Há um login por pessoa (Servidor, Docente, Emissor, Chefe de Setor, Diretor-Geral) |
 | Campo **Matrícula** | Recebe a matrícula SIAPE |
 | Campo **Senha** | Oculta por padrão; o ícone de olho mostra ou esconde a senha |
 | **Esqueci minha senha** | Abre a recuperação de senha (interface b) |
@@ -31,21 +31,21 @@ As três interfaces exigidas no trabalho estão na página **Telas (protótipo)*
 **Decisões de projeto**
 
 - **No sistema real não há escolha de perfil no login.** O perfil (Servidor, Solicitante, Emissor, Chefia, Gestão) vem do cadastro institucional, e um usuário pode acumular perfis (RN05).
-- **No protótipo, as abas simulam quem está entrando.** Sem elas, quem avalia teria de abrir um fluxo diferente para cada perfil. A faixa laranja “Ambiente de desenvolvimento” deixa claro que a escolha não faz parte do produto.
+- **No protótipo, cada pessoa de teste tem o próprio login.** Cada fluxo de perfil começa nele, e a seção **Trocar perfil** do menu do usuário passa para outra pessoa sem voltar ao login. A faixa laranja “Ambiente de desenvolvimento” deixa claro que a escolha não faz parte do produto.
 
-| Aba | Pessoa de teste | O que ela vê |
+| Login | Pessoa de teste | O que ela vê |
 |---|---|---|
 | Servidor | Fabrício · Servidor TAE, jornada contratual de 40 h | Painel pessoal sem limite docente |
 | Docente | Maria · Docente EBTT, também Solicitante (presidente da Comissão de TCC) | Painel pessoal com limite de 10 h e Solicitações |
 | Emissor | Thiago · TAE da CGP, Emissor | Fila de solicitações, Nova portaria e Boletim de Serviço |
 | Chefe de Setor | Julia · Coordenação de Ciência da Computação | Relatórios só do próprio setor |
-| Diretor-Geral | Willian · Gestão | Relatórios completos, exceções e assinaturas |
+| Diretor-Geral | Willian · Gestão | Relatórios completos, exceções e fila de assinaturas |
 
 ### Estado de erro
 
 ![Login – Erro](imagens/07a-login-erro.png)
 
-A mensagem geral aparece no topo do formulário; o campo de senha fica com borda vermelha e uma dica específica (“Verifique maiúsculas e minúsculas.”). O erro é sinalizado por cor, ícone e texto ao mesmo tempo, para não depender só da cor. Há uma versão da tela de erro para cada aba de perfil.
+A mensagem geral aparece no topo do formulário; o campo de senha fica com borda vermelha e uma dica específica (“Verifique maiúsculas e minúsculas.”). O erro é sinalizado por cor, ícone e texto ao mesmo tempo, para não depender só da cor. Há uma versão da tela de erro para cada pessoa de teste.
 
 ### Estado carregando
 
@@ -89,9 +89,9 @@ Cada perfil tem a própria Home. A estrutura é a mesma (menu lateral, barra sup
 
 | Região | Conteúdo |
 |---|---|
-| **Menu lateral** (componente `Menu lateral RBAC`) | Início, Portarias (Listar portarias e Nova portaria), Solicitações, Carga horária, Alertas, Extrato, Relatórios, Boletim de Serviço e Sair. Cada item aparece conforme o perfil (tabela abaixo) e o item atual fica destacado |
+| **Menu lateral** (componente `Menu lateral RBAC`) | Início, Portarias (Listar portarias, Nova portaria e, para a Gestão, Assinaturas), Solicitações (Listar solicitações e Nova solicitação), Carga horária, Alertas, Extrato, Relatórios, Boletim de Serviço e Sair. Cada item aparece conforme o perfil (tabela abaixo) e o item atual fica destacado |
 | **Barra superior** (componente `Barra superior`) | Busca global (leva à busca de portarias), sino de notificações com indicador (leva aos alertas) e menu do usuário. Nome, iniciais e cargo vêm das variáveis gravadas no login |
-| **Menu do usuário** | Nome e cargo, os perfis que a pessoa acumula (o atual marcado), Meu extrato e Sair |
+| **Menu do usuário** | Nome e cargo, os perfis que a pessoa acumula (o atual marcado), Meu extrato, Sair e, só no protótipo, **Trocar perfil** com as cinco pessoas de teste |
 | **Cabeçalho** | Saudação, data e atalho **Ver extrato** |
 | **Indicadores** | Portarias vigentes (5) · Horas em portarias (8 h de 10 h) · Alertas (2, 1 urgente) · Ciência pendente (1) |
 | **Carga horária por portaria** | Barras por portaria e total “8 h de 10 h · 2 h livres” (RF09) |
@@ -119,14 +119,15 @@ Cada perfil tem a própria Home. A estrutura é a mesma (menu lateral, barra sup
 | Item do menu | Docente | Servidor TAE | Emissor | Chefia | Gestão |
 |---|:-:|:-:|:-:|:-:|:-:|
 | Início, Portarias (Listar portarias), Carga horária, Alertas, Extrato | ✔ | ✔ | ✔ | ✔ | ✔ |
-| Solicitações | ✔ (nova solicitação) | | ✔ (fila de análise) | | ✔ (fila) |
+| Solicitações (Listar e Nova solicitação) | ✔ | | ✔ (com o número de pedidos em análise) | | ✔ |
+| Assinaturas (fila do Diretor-Geral) | | | | | ✔ |
 | Nova portaria | | | ✔ | | |
 | Relatórios | | | | ✔ (só o setor) | ✔ |
 | Boletim de Serviço | | | ✔ | | |
 
 **Decisões de projeto**
 
-- Os mesmos itens de menu levam a lugares diferentes conforme o perfil: **Início** volta à Home de quem entrou, **Relatórios** abre o relatório do setor para a chefia e o completo para a Gestão, e **Solicitações** abre o formulário para quem pede e a fila para quem analisa.
+- Os mesmos itens de menu levam a lugares diferentes conforme o perfil: **Início** volta à Home de quem entrou, **Relatórios** abre o relatório do setor para a chefia e o completo para a Gestão, e **Solicitações** abre um submenu: **Listar solicitações** leva à fila de análise e **Nova solicitação** ao formulário.
 - Cada bloco tem um atalho para a tela de detalhe: **Ver detalhes**, **Ver todos**, **Ver extrato completo**, **Dar ciência**, **Abrir fila de análise**, **Analisar exceção**.
 - A cor só reforça o significado: urgente em vermelho e pendente em laranja, sempre acompanhados de ícone e texto.
 
