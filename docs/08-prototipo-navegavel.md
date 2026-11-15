@@ -255,3 +255,9 @@ Em 15/11/2026, pela manhã, **Gabriel Reato**, que não participou do desenho da
 | 6. Emissor (Thiago) | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
 | 7. Chefia (Julia) | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
 | 8. Gestão (Willian) | Gabriel Reato | 15/11/2026 (manhã) | Aprovado |
+
+**Revisão final da equipe (15/11/2026, tarde).** Depois do teste, a equipe conferiu de novo os 9 fluxos, perfil por perfil, e corrigiu três pontos no protótipo:
+
+- o envio da solicitação levava à fila do Emissor e dava acesso a **Aprovar e elaborar**; agora volta ao painel de quem pediu;
+- **Aprovar e elaborar** e **Devolver** apareciam para a Gestão na fila de solicitações; agora só aparecem para o Emissor;
+- **Solicitar prorrogação**, em Alertas, aparecia para quem não é Solicitante; agora só aparece para quem tem acesso a Solicitações (RN05).
