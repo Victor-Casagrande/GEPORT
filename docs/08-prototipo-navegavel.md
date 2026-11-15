@@ -63,7 +63,7 @@ O login grava a pessoa de teste em variáveis da coleção **Estado do protótip
 
 ### 1. Visitante: landing → login
 
-Landing → **Entrar no SGP** → Login (aba Servidor) → **Entrar** → “Entrando…” (avança sozinho em 1,2 s) → Painel do servidor TAE.
+Landing → **Entrar no GEPORT** → Login (aba Servidor) → **Entrar** → “Entrando…” (avança sozinho em 1,2 s) → Painel do servidor TAE.
 Na landing, os 12 cards de funcionalidade abrem sobreposições navegáveis entre si (anterior, próxima, fechar). Sobre e Funcionalidades rolam a página; Consultar portarias leva à consulta pública.
 
 ### 2. Consulta pública (sem login)
@@ -114,7 +114,7 @@ Login — Diretor-Geral → Painel (Gestão):
 
 ```mermaid
 flowchart LR
-    LAND[Landing] -->|Entrar no SGP| LOGIN[Login – abas de perfil]
+    LAND[Landing] -->|Entrar no GEPORT| LOGIN[Login – abas de perfil]
     LAND -->|Consultar portarias| CP[Consulta pública] --> CPD[Consulta – Portaria 98/2026]
     LAND -.->|cards| FUNC[[12 sobreposições de funcionalidade]]
     LOGIN -->|Esqueci minha senha| R1[Recuperar 1] --> R2[Recuperar 2] --> R3[Recuperar 3] --> R4[Recuperar 4] --> LOGIN
@@ -230,7 +230,7 @@ O **menu do usuário**, aberto pelo avatar na barra superior, mostra o nome, o c
 
 ## Limitações conhecidas
 
-- **Somente desktop (decisão de escopo):** as telas foram desenhadas para 1440 px, porque o SGP é um sistema administrativo usado nos computadores do campus. A versão responsiva (celular e tablet) está no backlog como fase futura (US25), começando pela consulta pública.
+- **Somente desktop (decisão de escopo):** as telas foram desenhadas para 1440 px, porque o GEPORT é um sistema administrativo usado nos computadores do campus. A versão responsiva (celular e tablet) está no backlog como fase futura (US25), começando pela consulta pública.
 - **Escolha de perfil no login:** existe só no protótipo, para simular cada pessoa de teste (ver [07](07-interfaces.md#a-login-com-usuário-e-senha)).
 - Escolher outra opção numa lista fecha a sobreposição, mas o valor exibido no campo não muda (o Figma exigiria uma variante de tela para cada combinação). As escolhas mais importantes (tipo de pedido, destino, prazo, DOU, abas) têm variações de tela próprias.
 - Os campos de texto não aceitam digitação; os valores são de exemplo.

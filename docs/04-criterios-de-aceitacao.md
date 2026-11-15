@@ -98,7 +98,7 @@ O usuário é a **matrícula SIAPE** e a senha é a mesma da rede institucional 
 
 | # | Req. | Critério verificável |
 |---|---|---|
-| CA-N1 | RNF01 | Nome, nome social, SIAPE, CPF, vínculo e lotação nunca são digitados no SGP; vêm do cadastro central. |
+| CA-N1 | RNF01 | Nome, nome social, SIAPE, CPF, vínculo e lotação nunca são digitados no GEPORT; vêm do cadastro central. |
 | CA-N2 | RNF03 | A busca de membros mostra resultados em até 1 segundo em 95% das buscas, enquanto o usuário digita, sem bloquear os demais campos. |
 | CA-N3 | RNF04 | Toda ação registra autor, data e hora e o que mudou; o IP não aparece em nenhuma tela. |
 | CA-N4 | RNF05 | O CPF não aparece na consulta pública nem nos relatórios. |
@@ -110,7 +110,7 @@ O usuário é a **matrícula SIAPE** e a senha é a mesma da rede institucional 
 
 | # | Cenário | Então |
 |---|---|---|
-| CA-LP1 | O visitante clica em **Entrar no SGP** (cabeçalho, hero ou chamada final) | vai para o login |
+| CA-LP1 | O visitante clica em **Entrar no GEPORT** (cabeçalho, hero ou chamada final) | vai para o login |
 | CA-LP2 | O visitante clica em um card de funcionalidade | abre a sobreposição daquela funcionalidade, com navegação para a anterior e a próxima e botão de fechar |
 | CA-LP3 | O visitante clica em **Consultar portarias** | vai para a consulta pública, sem login |
 | CA-LP4 | O visitante clica em **Sobre** ou **Funcionalidades** no cabeçalho | a página rola até a seção correspondente; **Documentos** leva à consulta pública |

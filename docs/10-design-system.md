@@ -8,13 +8,13 @@ O design system está na página **Design System** do Figma. As telas usam só o
 
 | Recurso | Quantidade | Onde ver no Figma |
 |---|---|---|
-| Variáveis de design (coleção “SGP Tokens”) | 28 | Painel **Local variables** |
+| Variáveis de design (coleção “GEPORT Tokens”) | 28 | Painel **Local variables** |
 | Variáveis de estado do protótipo (coleção “Estado do protótipo”) | 21 | Painel **Local variables**; uso descrito em [08](08-prototipo-navegavel.md#como-o-protótipo-sabe-quem-entrou) |
 | Estilos de cor | 16 | **Assets › Estilos de cor**, ligados às variáveis |
 | Estilos de texto | 11 | **Assets › Estilos de texto** |
 | Estilos de efeito (sombras) | 4 | **Assets › Estilos de efeito** |
 | Estilos de grade (guias de layout) | 3 | **Assets › Guias de layout** |
-| Componentes e conjuntos de variantes | 13 + 34 ícones | Página **Design System** |
+| Componentes e conjuntos de variantes | 14 + 34 ícones | Página **Design System** |
 | Sobreposições | 60 (modais, menus, listas de seleção e avisos) | Página **Telas (protótipo)** |
 | Estilos de animação | 5 | **Assets › Estilos de animação** |
 | Variantes interativas | Botão, Card, Segmento, Status | Hover e alternância ao clicar |
@@ -23,7 +23,7 @@ O design system está na página **Design System** do Figma. As telas usam só o
 
 Os quatro princípios de design vistos na disciplina orientaram as telas:
 
-| Princípio | Objetivo | Onde aparece no SGP |
+| Princípio | Objetivo | Onde aparece no GEPORT |
 |---|---|---|
 | **Proximidade** | Organizar as informações | Rótulo junto do campo; dados da portaria agrupados em cards (membros, dados, histórico) |
 | **Alinhamento** | Unificar e organizar a página | Grade de 12 colunas e base de 8 px; conteúdo alinhado ao menu lateral em todas as telas |
@@ -111,11 +111,13 @@ Espaçamentos em múltiplos de 8 px; raios de 6, 12 e 16 px e pílula.
 | **Menu lateral RBAC** | 5 variantes (Perfil: Gestão, Emissor, Chefia, Docente, TAE) | Painel inicial de cada perfil |
 | **Barra superior** | Propriedades Nome, Perfil, Iniciais | Todas as telas internas |
 | **Cabeçalho da landing** | — | Landing e consulta pública |
+| **Logo GEPORT** | 4 variantes (Versão: Horizontal, Símbolo, Ícone, Monocromática), montadas sobre o componente `_Logo GEPORT / Símbolo base` | Menu lateral, cabeçalho da landing e materiais do projeto |
 | **Ícones** | 34 componentes `Icon/…` (documento, pessoas, sincronizar, busca, sino, alerta, check, cadeado, escudo, e-mail…) | Usados por instância e trocados pela propriedade Ícone |
 
 ## Imagens e ilustrações
 
 - **Logotipo oficial do IFC** no cabeçalho da landing, no login e no rodapé.
+- **Logo do GEPORT:** uma porta aberta com o G em forma de relógio entre os batentes. A porta remete ao duplo sentido de “portaria” e o relógio à vigência e à carga horária. Aparece no menu lateral e no cabeçalho da landing; a versão Ícone foi testada em 64, 32 e 16 px. As cores vêm dos estilos `Marca/500`, `Marca/600` e `Marca/700`.
 - **Ilustrações** em traço na seção “Por que confiar” da landing (login, calendário, histórico e busca).
 - **Diagrama do ciclo de vida** da portaria como tela própria do protótipo.
 

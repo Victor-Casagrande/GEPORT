@@ -1,8 +1,10 @@
-# SGP – Sistema de Gestão de Portarias
+# GEPORT – Gestão de Portarias
 
 **IFC Campus Videira · Trabalho/Prova: Gestor de Portarias – 2026**
 
-O SGP substitui as planilhas e pastas usadas hoje para controlar portarias no campus. Ele cobre o caminho completo de uma portaria: o pedido do coordenador, a elaboração pelo Gabinete ou pela CGP, a assinatura no SIPAC e a ciência dos membros. Também controla a carga horária de cada servidor em portarias e mantém o histórico que o servidor usa na progressão funcional.
+O GEPORT substitui as planilhas e pastas usadas hoje para controlar portarias no campus. Ele cobre o caminho completo de uma portaria: o pedido do coordenador, a elaboração pelo Gabinete ou pela CGP, a assinatura no SIPAC e a ciência dos membros. Também controla a carga horária de cada servidor em portarias e mantém o histórico que o servidor usa na progressão funcional.
+
+> Até novembro de 2026 o projeto se chamava **SGP – Sistema de Gestão de Portarias**. A equipe adotou o nome GEPORT e uma logo própria na fase final; o nome antigo continua só nos registros históricos (decisões, lições aprendidas e imagens da evolução do protótipo).
 
 Este repositório reúne a documentação de projeto. O sistema não é codificado nesta etapa: a equipe atua como **projetista/arquiteta** da solução, e as integrações com o LDAP/AD da Reitoria e com o SIPAC são consideradas garantidas.
 
@@ -42,10 +44,10 @@ Este repositório reúne a documentação de projeto. O sistema não é codifica
 | Exigência do trabalho | Onde está atendida |
 |---|---|
 | Sistema web alinhado às regras de negócio da instituição | [06 – Regras de negócio](docs/06-regras-de-negocio.md), tiradas da entrevista com o Diretor-Geral do Campus Videira |
-| Design personalizado, em consonância com o ambiente do IFC | Verde institucional, logotipo oficial, termos do serviço público (SIPAC, DOU, Boletim de Serviço, SIAPE) · [10 – Design system](docs/10-design-system.md) |
+| Design personalizado, em consonância com o ambiente do IFC | Verde institucional, logotipo oficial do IFC, logo própria do GEPORT (porta aberta com o G em forma de relógio), termos do serviço público (SIPAC, DOU, Boletim de Serviço, SIAPE) · [10 – Design system](docs/10-design-system.md) |
 | Requisitos levantados em Engenharia de Software I | [05 – Requisitos](docs/05-requisitos.md), com o horário de cada trecho da entrevista |
 | Imagens, fontes, ícones e ilustrações | Logotipo do IFC, fonte Inter com 11 estilos de texto, 34 ícones em componentes, ilustrações na landing |
-| Componentes, sobreposições, paleta de cores e estilos no Figma | 13 componentes com variantes e propriedades (mais 34 ícones), 60 sobreposições (modais, menus, listas de seleção e avisos), 16 estilos de cor ligados a variáveis, 11 de texto, 4 de efeito, 3 de grade e 5 de animação; 49 variáveis (28 de design e 21 de estado do protótipo) |
+| Componentes, sobreposições, paleta de cores e estilos no Figma | 14 componentes com variantes e propriedades (mais 34 ícones), 60 sobreposições (modais, menus, listas de seleção e avisos), 16 estilos de cor ligados a variáveis, 11 de texto, 4 de efeito, 3 de grade e 5 de animação; 49 variáveis (28 de design e 21 de estado do protótipo) |
 | Protótipo navegável em botões, menus e sobreposições | 2.648 interações em 89 telas e 60 sobreposições, com 9 fluxos (5 de perfil e 4 públicos); menu, barra superior e atalhos mudam conforme o perfil que entrou, por meio de variáveis e condições; todos os campos de seleção abrem lista de opções · [08 – Protótipo](docs/08-prototipo-navegavel.md) |
 | Plano de Projeto, EAP, talentos, critérios de aceitação | [01](docs/01-plano-de-projeto.md) e [01b](docs/01b-planejamento-detalhado.md), [02](docs/02-eap.md), [03](docs/03-mapeamento-de-talentos.md), [04](docs/04-criterios-de-aceitacao.md) |
 | Interfaces a) login, b) recuperação de senha, c) Home com menu | [07 – Interfaces](docs/07-interfaces.md) |

@@ -4,7 +4,7 @@ Complemento do [Plano de Projeto (Termo de Abertura)](01-plano-de-projeto.md): a
 
 | | |
 |---|---|
-| **Projeto** | SGP – Sistema de Gestão de Portarias |
+| **Projeto** | GEPORT – Gestão de Portarias |
 | **Instituição** | Instituto Federal Catarinense – Campus Videira |
 | **Product Owner (cliente)** | Diretor-Geral do Campus Videira |
 | **Equipe** | Victor Casagrande, Lucas Duarte Lopes, Willighan Tinelli de Souza |
@@ -38,7 +38,7 @@ Hoje as portarias do campus são controladas em planilhas e pastas. A entrevista
 | O3 | Rastrear todos os requisitos | 100% dos RF ligados a tela e a critério de aceitação | 28/10/2026 |
 | O4 | Basear as regras no cliente | 100% das regras de negócio com trecho da entrevista como fonte | 21/10/2026 |
 
-**Objetivos do produto (o que o SGP deve resolver)**
+**Objetivos do produto (o que o GEPORT deve resolver)**
 
 1. Eliminar as planilhas paralelas, com uma única base consultável.
 2. Bloquear designações que ultrapassem a jornada contratual ou o limite docente (RN04).
@@ -69,13 +69,13 @@ O escopo completo está decomposto na [EAP](02-eap.md); o que não está nela n�
 - Importação das portarias antigas de 2010 a 2016 (RNF07, fase futura).
 - Exportação para planilhas (RNF06; decisão do cliente).
 - Fila offline para o caso de o SIPAC estar fora do ar (RNF02).
-- **Versões para celular e tablet.** O SGP é um sistema administrativo usado em computadores do campus; as telas foram desenhadas para 1440 px. A adaptação responsiva fica registrada no backlog (US25) para uma fase futura. A consulta pública é a primeira candidata, por ser a única tela usada por pessoas de fora.
+- **Versões para celular e tablet.** O GEPORT é um sistema administrativo usado em computadores do campus; as telas foram desenhadas para 1440 px. A adaptação responsiva fica registrada no backlog (US25) para uma fase futura. A consulta pública é a primeira candidata, por ser a única tela usada por pessoas de fora.
 
 ## 4. Partes interessadas
 
 Classificadas nas três categorias vistas na disciplina.
 
-| Categoria | Parte interessada | Interesse no SGP | Perfil no sistema |
+| Categoria | Parte interessada | Interesse no GEPORT | Perfil no sistema |
 |---|---|---|---|
 | **Equipe do projeto** | Victor Casagrande, Lucas Duarte Lopes, Willighan Tinelli de Souza | Projetar o sistema e entregar os artefatos | — |
 | **Equipe do projeto** | Prof. Tiago Gonçalves | Orientar e avaliar o projeto | — |
@@ -86,7 +86,7 @@ Classificadas nas três categorias vistas na disciplina.
 | **Clientes** | Chefias de setor | Carga horária do próprio setor | Chefia de setor |
 | **Clientes** | Servidores (docentes e TAE) | Dar ciência e consultar o próprio extrato | Servidor |
 | **Outras partes interessadas** | DTIC do campus | Suporte ao login e às integrações | — |
-| **Outras partes interessadas** | Reitoria (LDAP/AD) e equipe do SIPAC | Sistemas dos quais o SGP depende | — |
+| **Outras partes interessadas** | Reitoria (LDAP/AD) e equipe do SIPAC | Sistemas dos quais o GEPORT depende | — |
 | **Outras partes interessadas** | Comunidade externa | Consultar portarias publicadas | Público |
 
 ## 5. Ciclo de vida e metodologia
@@ -152,7 +152,7 @@ O cronograma é formado pelas atividades derivadas dos pacotes de trabalho da EA
 
 ```mermaid
 gantt
-    title SGP – fase final
+    title GEPORT – fase final
     dateFormat  YYYY-MM-DD
     axisFormat  %d/%m
     section Execução
@@ -195,7 +195,7 @@ Prioridade pelo método MoSCoW (**M**ust, **S**hould, **C**ould, **W**on't). Est
 
 | ID | História de usuário | Requisitos | Prior. | Pts | Sprint | Situação |
 |---|---|---|---|---|---|---|
-| US01 | Como **visitante**, quero conhecer o SGP por uma landing page, para entender o que ele resolve antes de entrar | Landing | M | 5 | ES I–1 | Pronto |
+| US01 | Como **visitante**, quero conhecer o GEPORT por uma landing page, para entender o que ele resolve antes de entrar | Landing | M | 5 | ES I–1 | Pronto |
 | US02 | Como **servidor**, quero entrar com meu usuário e senha institucionais, para não ter outra senha | RNF01 | M | 3 | 1 | Pronto |
 | US03 | Como **servidor**, quero recuperar minha senha por e-mail, para voltar a acessar sem abrir chamado | RNF01 | M | 3 | 1 | Pronto |
 | US04 | Como **servidor**, quero uma página inicial com menu e resumo das minhas pendências, para saber o que fazer | RF09, RF10 | M | 5 | 1 | Pronto |
@@ -288,7 +288,7 @@ As dúvidas de regra de negócio e de entrega foram levadas ao professor em **22
 
 ## 13. Premissas e restrições
 
-- **Premissa:** o acesso ao LDAP/AD da Reitoria e ao SIPAC está garantido. O SGP lê de lá nome, nome social, SIAPE, CPF, vínculo e lotação.
+- **Premissa:** o acesso ao LDAP/AD da Reitoria e ao SIPAC está garantido. O GEPORT lê de lá nome, nome social, SIAPE, CPF, vínculo e lotação.
 - **Premissa:** um usuário pode acumular perfis; o perfil vem do cadastro e não é escolhido na tela de login. No protótipo, abas marcadas como “Ambiente de desenvolvimento” simulam a pessoa de teste.
 - **Restrição:** trabalho em grupo de três integrantes, com prazo fixo de 08/11/2026, 23h59.
 - **Restrição:** o protótipo é feito no Figma; não há código executável.

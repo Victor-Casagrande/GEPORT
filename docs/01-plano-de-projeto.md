@@ -6,7 +6,7 @@ O detalhamento do planejamento (ciclo de vida, papéis, cronograma, backlog, ris
 
 | | |
 |---|---|
-| **Título do projeto** | SGP – Sistema de Gestão de Portarias (Gestor Portarias) · IFC Campus Videira |
+| **Título do projeto** | GEPORT – Gestão de Portarias (Gestor Portarias) · IFC Campus Videira |
 | **Versão** | 1.1 – 22/10/2026 |
 
 > O projeto começou em Engenharia de Software I sem um Termo de Abertura formal. Este termo consolida o que foi acordado desde a entrevista de 30/03/2026 e as respostas do professor de 22/10/2026, e é a referência de escopo da fase final.
@@ -29,7 +29,7 @@ O detalhamento do planejamento (ciclo de vida, papéis, cronograma, backlog, ris
 
 ### Descrição do Produto / Entregas
 
-- Produto: protótipo de alta fidelidade do SGP no Figma, com landing page, login, recuperação de senha, Home com menu e as telas de servidor, solicitante, emissor, chefia, gestão e consulta pública.
+- Produto: protótipo de alta fidelidade do GEPORT no Figma, com landing page, login, recuperação de senha, Home com menu e as telas de servidor, solicitante, emissor, chefia, gestão e consulta pública.
 - Entregas: (1) Plano de projeto; (2) EAP; (3) Mapeamento de talentos e habilidades; (4) Critérios de aceitação; (5) Requisitos funcionais e não funcionais; (6) Regras de negócio; (7) Interfaces: login, recuperação de senha e Home com menu; (8) Protótipo funcional e navegável; (9) Landing page.
 - Formas de entrega: arquivo do Figma com edição para o professor (Entrega 1) e repositório no GitHub com a documentação (Entrega 2).
 

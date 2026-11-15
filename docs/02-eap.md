@@ -17,11 +17,11 @@ A EAP decompõe **todo o escopo** do projeto em entregas, do nível 0 (o projeto
 
 ## Diagrama
 
-![EAP do SGP](imagens/02-eap.png)
+![EAP do GEPORT](imagens/02-eap.png)
 
 ```mermaid
 flowchart TD
-    P["SGP – SISTEMA DE GESTÃO DE PORTARIAS"]
+    P["GEPORT – GESTÃO DE PORTARIAS"]
     P --> E1["ETAPA I – INICIAÇÃO"]
     E1 --> D1_1["1.1 LEVANTAMENTO DE NECESSIDADES"]
     E1 --> D1_2["1.2 TERMO DE ABERTURA (PLANO DE PROJETO)"]
@@ -128,7 +128,7 @@ Siglas: **VC** Victor Casagrande · **LD** Lucas Duarte Lopes · **WT** Willigha
 | 3.2.1 | Paleta de cores e variáveis | Coleção de variáveis e 16 estilos de cor ligados a ela. | LD | 8 h | Estilos de cor visíveis no painel Assets | — |
 | 3.2.2 | Estilos de texto, efeito e grade | 11 estilos de texto, 4 de efeito, 3 de grade e 5 de animação. | LD | 8 h | Telas sem valores soltos de fonte e sombra | 3.2.1 |
 | 3.2.3 | Biblioteca de ícones | 34 ícones em componentes. | WT | 8 h | Ícones usados apenas por instância | — |
-| 3.2.4 | Componentes e variantes | 13 componentes: Botão, Status, Campo de texto, Segmento, Seletor de perfil, Card de funcionalidade, Item de menu, Subitem de menu, Grupo de navegação — Portarias, Menu lateral, Menu lateral RBAC, Barra superior e Cabeçalho da landing, com propriedades e estados interativos. | LD | 24 h | Componentes usados em todas as telas | 3.2.1, 3.2.2, 3.2.3 |
+| 3.2.4 | Componentes e variantes | 14 componentes: Botão, Status, Campo de texto, Segmento, Seletor de perfil, Card de funcionalidade, Item de menu, Subitem de menu, Grupo de navegação — Portarias, Menu lateral, Menu lateral RBAC, Barra superior, Cabeçalho da landing e Logo GEPORT, com propriedades e estados interativos. | LD | 24 h | Componentes usados em todas as telas | 3.2.1, 3.2.2, 3.2.3 |
 
 **3.3 INTERFACES**
 

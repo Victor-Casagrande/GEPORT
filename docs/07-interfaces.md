@@ -14,7 +14,7 @@ As três interfaces exigidas no trabalho estão na página **Telas (protótipo)*
 
 ![Login](imagens/07a-login.png)
 
-**Objetivo:** autenticar o servidor com as credenciais institucionais. O **usuário é a matrícula SIAPE** e a **senha é a da rede institucional** (LDAP/AD da Reitoria, RNF01), sem cadastro próprio no SGP.
+**Objetivo:** autenticar o servidor com as credenciais institucionais. O **usuário é a matrícula SIAPE** e a **senha é a da rede institucional** (LDAP/AD da Reitoria, RNF01), sem cadastro próprio no GEPORT.
 
 **Elementos**
 
@@ -26,7 +26,7 @@ As três interfaces exigidas no trabalho estão na página **Telas (protótipo)*
 | **Esqueci minha senha** | Abre a recuperação de senha (interface b) |
 | Botão **Entrar** | Grava o perfil escolhido nas variáveis do protótipo e abre o painel daquele perfil (o perfil Servidor passa antes pelo estado “Entrando…”) |
 | “Problemas para entrar? Fale com a DTIC do campus.” | Orientação de suporte |
-| Painel verde à direita | Resume o que o SGP oferece |
+| Painel verde à direita | Resume o que o GEPORT oferece |
 
 **Decisões de projeto**
 
