@@ -73,14 +73,14 @@ Consulta pública – busca → linha **98/2026** → Consulta pública – Port
 
 ### 3. Login com erro · 3b. Recuperar senha
 
-- **3:** Login – Erro (há uma versão de erro para cada pessoa de teste) → **Entrar** → painel daquela pessoa.
+- **3:** Login – Erro (há uma versão de erro para cada pessoa de teste) → **Entrar** volta ao login da mesma pessoa para tentar de novo → **Entrar** → painel daquela pessoa.
 - **3b:** Recuperar senha 1 → **Enviar link** → 2 (reenviar mostra o aviso “Link reenviado”) → **Abrir link do e-mail (simulação)** → 3 → **Salvar nova senha** → 4 → **Ir para o login**.
 
 ### 4. Docente (Maria): painel, ciência e solicitação
 
 Login — Docente → **Entrar** → Painel (Docente) → **Dar ciência na Portaria 98/2026** → Ciência → **Estou ciente do teor** → Alertas.
 Pelo menu: Carga horária (8 h de 10 h; exportar gera aviso), Alertas (abas por tipo; Ver portaria, Dar ciência, Solicitar prorrogação), Extrato (abas Todas/Vigentes/Encerradas/Revogadas; Exportar PDF).
-**Solicitações › Nova solicitação** abre o formulário: tipo de pedido (nova portaria, alteração de membros ou prorrogação), destino (Gabinete ou CGP), tipo de prazo (determinado, data fechada ou indeterminado), membros sugeridos e **Membro externo** (aluno, comunidade ou empresa) → **Enviar solicitação** → o pedido aparece na fila do Emissor.
+**Solicitações › Nova solicitação** abre o formulário: tipo de pedido (nova portaria, alteração de membros ou prorrogação), destino (Gabinete ou CGP), tipo de prazo (determinado, data fechada ou indeterminado), membros sugeridos e **Membro externo** (aluno, comunidade ou empresa) → **Enviar solicitação** → volta ao painel de quem pediu; o pedido segue para a fila do Emissor.
 O avatar abre o **menu do usuário**, com a troca entre Servidor e Solicitante, Meu extrato e Sair.
 
 ### 5. Servidor TAE (Fabrício): painel e jornada
@@ -127,7 +127,7 @@ flowchart LR
     LOGIN -->|Diretor-Geral| HGES[Painel Gestão]
 
     HDOC --> CIEN[Ciência 98/2026] --> ALERT[Alertas]
-    HDOC --> SOL[Nova solicitação] --> FILA
+    HDOC --> SOL[Nova solicitação] -.->|pedido segue para| FILA
     HTAE --> CARGA[Carga horária]
     HDOC --> CARGA
     HDOC --> EXT[Extrato]
@@ -237,18 +237,21 @@ O **menu do usuário**, aberto pelo avatar na barra superior, mostra o nome, o c
 - Os campos de texto não aceitam digitação; os valores são de exemplo.
 - Nas telas pessoais compartilhadas (Alertas, Extrato, Ciência), a barra superior mostra quem entrou, mas os dados de exemplo são os da docente **Maria**.
 - No modo de edição do Figma, as telas mostram os valores padrão das variáveis (o servidor TAE Fabrício); no modo de apresentação, mostram quem entrou.
+- Para a docente, **Solicitações › Listar solicitações** abre a mesma fila do Emissor, só para consulta: os botões **Aprovar e elaborar** e **Devolver** aparecem apenas para o Emissor. Uma lista só com os pedidos de quem solicitou fica para uma fase futura.
 - Elementos **intencionalmente sem destino:** o botão “Entrando…” (estado de carregamento) e o **Continuar** desabilitado da etapa 5 com bloqueio.
 
 ## Checklist de teste de navegação (Sprint 3)
 
+Em 15/11/2026 os 9 fluxos foram verificados por uma simulação automática feita por IA (Claude), que percorre o protótipo pelo Figma: a partir do ponto de partida de cada fluxo, segue todos os cliques e esperas, aplica as variáveis gravadas no login e as condições por perfil e respeita os itens escondidos por variável. Ela confere se cada fluxo chega às telas descritas neste documento, se há destinos quebrados e se algum perfil alcança telas que não são dele. Não substitui o teste com uma pessoa que não desenhou as telas (US21), que avalia a usabilidade; esse teste ainda precisa ser registrado numa segunda linha por fluxo.
+
 | Fluxo | Testado por | Data | Resultado |
 |---|---|---|---|
-| 1. Visitante | | | |
-| 2. Consulta pública | | | |
-| 3. Login com erro | | | |
-| 3b. Recuperar senha | | | |
-| 4. Docente (Maria) | | | |
-| 5. Servidor TAE (Fabrício) | | | |
-| 6. Emissor (Thiago) | | | |
-| 7. Chefia (Julia) | | | |
-| 8. Gestão (Willian) | | | |
+| 1. Visitante | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: chega ao login, ao painel TAE, à consulta pública e às 12 funcionalidades |
+| 2. Consulta pública | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: busca → Portaria 98/2026 → landing, sem acesso ao painel |
+| 3. Login com erro | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: Entrar volta ao login para tentar de novo e depois abre o painel. Texto do fluxo corrigido |
+| 3b. Recuperar senha | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: telas 1 a 4 e volta ao login |
+| 4. Docente (Maria) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado após correção: o envio da solicitação levava à fila do Emissor e dava acesso a “Aprovar e elaborar”. Agora volta ao painel; a fila fica só para consulta |
+| 5. Servidor TAE (Fabrício) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado após correção: “Solicitar prorrogação” em Alertas abria a solicitação para quem não é Solicitante. Agora só aparece com acesso a Solicitações |
+| 6. Emissor (Thiago) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado: fila, 6 etapas, pedido de exceção, modal de revisão, busca, detalhe, as 4 ações e Boletim |
+| 7. Chefia (Julia) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado após correção (mesmo caso do fluxo 5); vê só os relatórios do próprio setor |
+| 8. Gestão (Willian) | Claude (IA), simulação automática pelo Figma | 15/11/2026 | Aprovado após correção: “Aprovar e elaborar” e “Devolver” na fila agora só aparecem para o Emissor |
